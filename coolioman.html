@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coolioman's Page</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		h1 {
+			font-size: 48px;
+			color: #333333;
+			margin-bottom: 20px;
+		}
+
+		#rainbow-button {
+			display: inline-block;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 50px;
+			color: #fff;
+			font-size: 24px;
+			cursor: pointer;
+			animation: rainbow 0.5s infinite;
+		}
+
+		@keyframes rainbow {
+			0% {
+				background-color: red;
+			}
+			16% {
+				background-color: orange;
+			}
+			32% {
+				background-color: yellow;
+			}
+			48% {
+				background-color: green;
+			}
+			64% {
+				background-color: blue;
+			}
+			80% {
+				background-color: indigo;
+			}
+			100% {
+				background-color: violet;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome, Coolioman112!</h1>
+	<button id="rainbow-button">Click me for a rainbow effect!</button>
+	<script>
+		setInterval(function() {
+			document.getElementById('rainbow-button').click();
+		}, 500);
+	</script>
+</body>
+</html>

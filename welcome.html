@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		h1 {
+			font-size: 48px;
+			color: #333333;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome, <span id="username"></span>!</h1>
+	<img src="wowlogged.png" alt="Wow, you're logged in!">
+	<script>
+		// Get the username from the URL parameter
+		const urlParams = new URLSearchParams(window.location.search);
+		const username = urlParams.get('username');
+		
+		// Set the username in the welcome message
+		const usernameSpan = document.getElementById('username');
+		usernameSpan.textContent = username;
+	</script>
+</body>
+</html>
